@@ -1,6 +1,7 @@
 $(window).on("orientationchange",function(){
 
   if(!$('.layer1').is(':visible'))
+  alert("layer 1 visible");
 {
   if (window.orientation == 90)
   {
@@ -17,6 +18,8 @@ $(window).on("orientationchange",function(){
 }
 
 else if(!$('.layer2').is(':visible'))
+alert("layer 2 visible");
+
 {
 if (window.orientation == 90)
 {
@@ -33,6 +36,8 @@ else if (window.orientation == -90) // Landscape
 }
 
 else if(!$('.layer3').is(':visible'))
+alert("layer 3 visible");
+
 {
 if (window.orientation == 90)
 {
@@ -49,6 +54,8 @@ else if (window.orientation == -90) // Landscape
 }
 
 else if(!$('.layer4').is(':visible'))
+alert("layer 4 visible");
+
 {
 if (window.orientation == 90)
 {
