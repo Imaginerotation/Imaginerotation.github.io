@@ -1,7 +1,7 @@
 $(window).on("orientationchange",function(){
   var currentLayer = "Blue";
 
-  if(curentLayer == "Blue")
+  if(currentLayer == "Blue")
 {
   if (window.orientation == 90)
   {
@@ -20,7 +20,7 @@ $(window).on("orientationchange",function(){
 
 }
 
-else if(curentLayer == "Yellow")
+else if(currentLayer == "Yellow")
 {
 if (window.orientation == 90)
 {
@@ -40,7 +40,7 @@ else if (window.orientation == -90) // Landscape
 
 }
 
-else if(curentLayer == "Red")
+else if(currentLayer == "Red")
 {
 if (window.orientation == 90)
 {
@@ -60,7 +60,7 @@ else if (window.orientation == -90) // Landscape
 
 }
 
-else if(curentLayer == "Green")
+else if(currentLayer == "Green")
 {
 if (window.orientation == 90)
 {
