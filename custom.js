@@ -7,6 +7,8 @@ $(window).on("orientationchange",function(){
   else // Landscape
   {
     // $("p").css({"background-color":"pink","font-size":"200%"});
+    $('.layer1').hide();
+
     $('.layer2').show();
 
   }
