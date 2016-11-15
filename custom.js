@@ -1,4 +1,5 @@
 $(window).on("orientationchange",function(){
+
   if(!$('.layer1').is(':visible'))
 {
   if (window.orientation == 90)
@@ -15,7 +16,7 @@ $(window).on("orientationchange",function(){
 
 }
 
-if(!$('.layer2').is(':visible'))
+else if(!$('.layer2').is(':visible'))
 {
 if (window.orientation == 90)
 {
@@ -31,7 +32,7 @@ else if (window.orientation == -90) // Landscape
 
 }
 
-if(!$('.layer3').is(':visible'))
+else if(!$('.layer3').is(':visible'))
 {
 if (window.orientation == 90)
 {
@@ -47,7 +48,7 @@ else if (window.orientation == -90) // Landscape
 
 }
 
-if(!$('.layer4').is(':visible'))
+else if(!$('.layer4').is(':visible'))
 {
 if (window.orientation == 90)
 {
