@@ -1,0 +1,42 @@
+
+.city {
+   float: left;
+   /*margin: 10px;
+   padding: 10px;*/
+   max-width: 300px;
+   height: 300px;
+}
+.left {
+  float: left;
+  width: 50%;
+}
+.right {
+  float: right;
+  width: 50%;
+}
+
+.top img {
+   width: 100%;
+
+}
+
+.left img {
+   width: 100%;
+}
+
+.right img {
+   width: 100%;
+}
+
+.layer1 {
+  display: none;
+}
+.layer2 {
+  display: none;
+}
+.layer3 {
+  display: none;
+}
+.layer4 {
+  display: none;
+}
