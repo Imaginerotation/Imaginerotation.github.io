@@ -3,6 +3,8 @@ $(window).on("orientationchange",function(){
 
   if(currentLayer == "Blue")
 {
+  console.log("Layer is blue");
+
   if (window.orientation == 90)
   {
     $('.layer1').hide();
@@ -11,6 +13,7 @@ $(window).on("orientationchange",function(){
     $('.layer2').show();
     currentLayer = "Yellow";
   }
+
   else if (window.orientation == -90) // Landscape
   {
     // $("p").css({"background-color":"pink","font-size":"200%"});
@@ -21,11 +24,17 @@ $(window).on("orientationchange",function(){
     currentLayer = "Green";
 
   }
+  else
+  {
+    return;
+  }
 
 }
 
-else if(currentLayer == "Yellow")
+else if (currentLayer == "Yellow")
 {
+console.log("Layer is Yellow");
+
 if (window.orientation == 90)
 {
   $('.layer2').hide();
@@ -35,6 +44,7 @@ if (window.orientation == 90)
   currentLayer = "Red";
 
 }
+
 else if (window.orientation == -90) // Landscape
 {
   // $("p").css({"background-color":"pink","font-size":"200%"});
@@ -45,11 +55,17 @@ else if (window.orientation == -90) // Landscape
   currentLayer = "Blue";
 
 }
+else {
+  return;
+}
 
 }
 
 else if(currentLayer == "Red")
+
 {
+  console.log("Layer is Red");
+
 if (window.orientation == 90)
 {
   $('.layer3').hide();
@@ -59,6 +75,7 @@ if (window.orientation == 90)
   currentLayer = "Green";
 
 }
+
 else if (window.orientation == -90) // Landscape
 {
   // $("p").css({"background-color":"pink","font-size":"200%"});
@@ -69,11 +86,17 @@ else if (window.orientation == -90) // Landscape
   currentLayer = "Yellow";
 
 }
+else {
+  return;
+}
 
 }
 
 else if(currentLayer == "Green")
+
 {
+  console.log("Layer is Green");
+
 if (window.orientation == 90)
 {
   $('.layer4').hide();
@@ -83,6 +106,7 @@ if (window.orientation == 90)
   currentLayer = "Blue";
 
 }
+
 else if (window.orientation == -90) // Landscape
 {
   // $("p").css({"background-color":"pink","font-size":"200%"});
@@ -93,10 +117,17 @@ else if (window.orientation == -90) // Landscape
   currentLayer = "Red";
 
 }
-
+else {
+  return;
 }
 
+}
+else {
+  return;
+}
 
-
-
-});
+}
+else {
+  return;
+}
+);
