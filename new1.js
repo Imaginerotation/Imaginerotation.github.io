@@ -1,9 +1,6 @@
 $(window).on("orientationchange",function(){
   var currentLayer = "Blue";
-  $('.layer1').hide();
-  $('.layer2').hide();
-  $('.layer3').hide();
-  $('.layer4').hide();
+  $('.layer1').show();
 
   if(!$('.layer1').is(':visible'))
 {
