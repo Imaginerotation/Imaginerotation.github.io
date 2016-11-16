@@ -6,7 +6,7 @@ $( document ).ready(function() {
 $(window).on("orientationchange",function(){
   var currentLayer = "Blue";
 
-  if(!$('.layer1').is(':visible'))
+  if($('.layer1').is(':visible'))
 {
   console.log("Layer is blue");
 
@@ -41,7 +41,7 @@ $(window).on("orientationchange",function(){
 
 }
 
-else if(!$('.layer2').is(':visible'))
+else if($('.layer2').is(':visible'))
 {
 console.log("Layer is Yellow");
 
@@ -78,7 +78,7 @@ else {
 
 }
 
-else if(!$('.layer3').is(':visible'))
+else if($('.layer3').is(':visible'))
 
 {
   console.log("Layer is Red");
@@ -115,7 +115,7 @@ else {
 
 }
 
-else if(!$('.layer4').is(':visible'))
+else if($('.layer4').is(':visible'))
 
 {
   console.log("Layer is Green");
