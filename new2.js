@@ -11,6 +11,7 @@ $(window).on("orientationchange",function(){
 
   if (window.orientation == 90)
   {
+    console.log("moved right when blue");
     $('.layer1').hide();
     $('.layer3').hide();
     $('.layer4').hide();
@@ -22,6 +23,8 @@ $(window).on("orientationchange",function(){
   else if (window.orientation == -90) // Landscape
   {
     // $("p").css({"background-color":"pink","font-size":"200%"});
+    console.log("moved left when blue");
+
     $('.layer1').hide();
     $('.layer2').hide();
     $('.layer3').hide();
@@ -41,8 +44,11 @@ else if(!$('.layer2').is(':visible'))
 {
 console.log("Layer is Yellow");
 
+
 if (window.orientation == 90)
 {
+  console.log("moved right when yellow");
+
   $('.layer2').hide();
   $('.layer1').hide();
   $('.layer4').hide();
@@ -54,6 +60,8 @@ if (window.orientation == 90)
 
 else if (window.orientation == -90) // Landscape
 {
+  console.log("moved left when yellow");
+
   // $("p").css({"background-color":"pink","font-size":"200%"});
   $('.layer2').hide();
   $('.layer3').hide();
@@ -76,6 +84,8 @@ else if(!$('.layer3').is(':visible'))
 
 if (window.orientation == 90)
 {
+  console.log("moved right when red");
+
   $('.layer3').hide();
   $('.layer2').hide();
   $('.layer1').hide();
@@ -87,6 +97,8 @@ if (window.orientation == 90)
 
 else if (window.orientation == -90) // Landscape
 {
+  console.log("moved left when red");
+
   // $("p").css({"background-color":"pink","font-size":"200%"});
   $('.layer3').hide();
   $('.layer4').hide();
@@ -109,6 +121,8 @@ else if(!$('.layer4').is(':visible'))
 
 if (window.orientation == 90)
 {
+  console.log("moved right when green");
+
   $('.layer4').hide();
   $('.layer3').hide();
   $('.layer2').hide();
@@ -120,6 +134,8 @@ if (window.orientation == 90)
 
 else if (window.orientation == -90) // Landscape
 {
+  console.log("moved left when green");
+
   // $("p").css({"background-color":"pink","font-size":"200%"});
   $('.layer4').hide();
   $('.layer2').hide();
