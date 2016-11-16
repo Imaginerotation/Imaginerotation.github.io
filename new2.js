@@ -10,7 +10,7 @@ $(window).on("orientationchange",function(){
 {
   console.log("Layer is blue");
 
-  if (window.orientation == 90)
+  if (window.orientation == -90)
   {
     console.log("moved right when blue");
     $('.layer1').hide();
@@ -21,7 +21,7 @@ $(window).on("orientationchange",function(){
     currentLayer = "Yellow";
   }
 
-  else if (window.orientation == -90) // Landscape
+  else if (window.orientation == 90) // Landscape
   {
     // $("p").css({"background-color":"pink","font-size":"200%"});
     console.log("moved left when blue");
@@ -46,7 +46,7 @@ else if($('.layer2').is(':visible'))
 console.log("Layer is Yellow");
 
 
-if (window.orientation == 90)
+if (window.orientation == -90)
 {
   console.log("moved right when yellow");
 
@@ -59,7 +59,7 @@ if (window.orientation == 90)
 
 }
 
-else if (window.orientation == -90) // Landscape
+else if (window.orientation == 90) // Landscape
 {
   console.log("moved left when yellow");
 
@@ -83,7 +83,7 @@ else if($('.layer3').is(':visible'))
 {
   console.log("Layer is Red");
 
-if (window.orientation == 90)
+if (window.orientation == -90)
 {
   console.log("moved right when red");
 
@@ -96,7 +96,7 @@ if (window.orientation == 90)
 
 }
 
-else if (window.orientation == -90) // Landscape
+else if (window.orientation == 90) // Landscape
 {
   console.log("moved left when red");
 
@@ -120,7 +120,7 @@ else if($('.layer4').is(':visible'))
 {
   console.log("Layer is Green");
 
-if (window.orientation == 90)
+if (window.orientation == -90)
 {
   console.log("moved right when green");
 
@@ -133,7 +133,7 @@ if (window.orientation == 90)
 
 }
 
-else if (window.orientation == -90) // Landscape
+else if (window.orientation == 90) // Landscape
 {
   console.log("moved left when green");
 
