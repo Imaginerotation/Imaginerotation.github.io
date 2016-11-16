@@ -1,3 +1,7 @@
+$( document ).ready(function() {
+  $(".layer1").delay(0).fadeIn();
+});
+
 $(window).on("orientationchange",function(){
   var currentLayer = "Blue";
 
@@ -10,7 +14,8 @@ $(window).on("orientationchange",function(){
     $('.layer1').hide();
     $('.layer3').hide();
     $('.layer4').hide();
-    $('.layer2').show();
+    $(".layer2").delay(0).fadeIn();
+
     currentLayer = "Yellow";
   }
 
@@ -20,7 +25,8 @@ $(window).on("orientationchange",function(){
     $('.layer1').hide();
     $('.layer2').hide();
     $('.layer3').hide();
-    $('.layer4').show();
+    $(".layer4").delay(0).fadeIn();
+
     currentLayer = "Green";
 
   }
@@ -40,7 +46,8 @@ if (window.orientation == 90)
   $('.layer2').hide();
   $('.layer1').hide();
   $('.layer4').hide();
-  $('.layer3').show();
+  $(".layer3").delay(0).fadeIn();
+
   currentLayer = "Red";
 
 }
@@ -51,7 +58,8 @@ else if (window.orientation == -90) // Landscape
   $('.layer2').hide();
   $('.layer3').hide();
   $('.layer4').hide();
-  $('.layer1').show();
+  $(".layer1").delay(0).fadeIn();
+
   currentLayer = "Blue";
 
 }
@@ -71,7 +79,8 @@ if (window.orientation == 90)
   $('.layer3').hide();
   $('.layer2').hide();
   $('.layer1').hide();
-  $('.layer4').show();
+  $(".layer4").delay(0).fadeIn();
+
   currentLayer = "Green";
 
 }
@@ -82,7 +91,8 @@ else if (window.orientation == -90) // Landscape
   $('.layer3').hide();
   $('.layer4').hide();
   $('.layer1').hide();
-  $('.layer2').show();
+  $(".layer2").delay(0).fadeIn();
+
   currentLayer = "Yellow";
 
 }
@@ -102,7 +112,8 @@ if (window.orientation == 90)
   $('.layer4').hide();
   $('.layer3').hide();
   $('.layer2').hide();
-  $('.layer1').show();
+  $(".layer1").delay(0).fadeIn();
+
   currentLayer = "Blue";
 
 }
@@ -113,7 +124,8 @@ else if (window.orientation == -90) // Landscape
   $('.layer4').hide();
   $('.layer2').hide();
   $('.layer1').hide();
-  $('.layer3').show();
+  $(".layer3").delay(0).fadeIn();
+
   currentLayer = "Red";
 
 }
