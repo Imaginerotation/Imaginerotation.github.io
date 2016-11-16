@@ -1,5 +1,7 @@
 $(window).on("orientationchange",function(){
   var currentLayer = "Blue";
+  console.log("Here");
+
 
   if(currentLayer == "Blue")
 {
