@@ -2,6 +2,8 @@ $(window).on("orientationchange",function(){
 
   if(!$('.layer1').is(':visible'))
 {
+  console.log("Here");
+
   if (window.orientation == 90)
   {
     $('.layer1').hide();
@@ -18,6 +20,8 @@ $(window).on("orientationchange",function(){
 
 else if(!$('.layer2').is(':visible'))
 {
+  console.log("Here");
+
 if (window.orientation == 90)
 {
   $('.layer2').hide();
@@ -34,6 +38,8 @@ else if (window.orientation == -90) // Landscape
 
 else if(!$('.layer3').is(':visible'))
 {
+  console.log("Here");
+
 if (window.orientation == 90)
 {
   $('.layer3').hide();
@@ -50,6 +56,8 @@ else if (window.orientation == -90) // Landscape
 
 else if(!$('.layer4').is(':visible'))
 {
+  console.log("Here");
+
 if (window.orientation == 90)
 {
   $('.layer4').hide();
