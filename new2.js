@@ -1,5 +1,6 @@
 $( document ).ready(function() {
   $(".layer1").delay(0).fadeIn();
+  console.log("The screen loaded");
 });
 
 $(window).on("orientationchange",function(){
