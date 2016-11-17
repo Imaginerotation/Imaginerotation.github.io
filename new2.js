@@ -53,10 +53,10 @@ $('.layer2').fadeIn();
 
 
 if (window.orientation == -90)
-$(".layer2").delay(0).fadeIn();
 
 
 {
+
   console.log("moved right when yellow");
   $('.layer2').hide();
   $('.layer2_horiz').hide();
