@@ -17,6 +17,11 @@ $(window).on("orientationchange",function(){
     $('.layer3').hide();
     $('.layer4').hide();
     $(".layer2_horiz").delay(0).fadeIn();
+    if (window.orientation == 0)
+    {
+      console.log("Moved back up");
+    }
+
 
     currentLayer = "Yellow";
   }
