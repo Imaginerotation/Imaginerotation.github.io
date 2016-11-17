@@ -20,8 +20,14 @@ $(window).on("orientationchange",function(){
     $('.layer3_horiz').hide();
     $('.layer4_horiz').hide();
     $(".layer2_horiz").delay(0).fadeIn();
+    if (window.orientation == 0)
+    {
+      $(".layer2_horiz").delay(0).fadeOut();
+      $(".layer2").delay(0).fadeIn();
 
-    currentLayer = "Yellow";
+
+    }
+
   }
 
   else if (window.orientation == 90) // Landscape
