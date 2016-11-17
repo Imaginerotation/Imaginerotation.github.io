@@ -12,12 +12,18 @@ $(window).on("orientationchange",function(){
 
   if (window.orientation == -90) //Phone rotated horizontally to the right
   {
+    $('.layer1').hide();
+    $('.layer3').hide();
+    $('.layer4').hide();
     $(".layer2_horiz").delay(0).fadeIn();
 
   }
 
-  else if (window.orientation == 90) //Phone rotated horizontally to the left
+  else if (window.orientation == 90) //Phone rotated horizontally to the left 
   {
+    $('.layer1').hide();
+    $('.layer2').hide();
+    $('.layer3').hide();
     $(".layer4_horiz").delay(0).fadeIn();
   }
   else
@@ -33,11 +39,19 @@ $('.layer2_horiz').hide();
 
 if (window.orientation == -90)
 {
-    $(".layer3_horiz").delay(0).fadeIn();
+  console.log("moved right when yellow");
+  $('.layer2').hide();
+  $('.layer2_horiz').hide();
+  $('.layer1').hide();
+  $('.layer4').hide();
+  $(".layer3_horiz").delay(0).fadeIn();
 }
 
 else if (window.orientation == 90) // Landscape
 {
+  $('.layer2').hide();
+  $('.layer3').hide();
+  $('.layer4').hide();
   $(".layer1_horiz").delay(0).fadeIn();
 }
 else {
@@ -53,11 +67,18 @@ else if($('.layer3').is(':visible')|| $('.layer3_horiz').is(':visible'))
 
 if (window.orientation == -90)
 {
+  $('.layer3').hide();
+  $('.layer2').hide();
+  $('.layer1').hide();
   $(".layer4_horiz").delay(0).fadeIn();
+
+
 }
 
 else if (window.orientation == 90) // Landscape
-{
+{  $('.layer3').hide();
+  $('.layer4').hide();
+  $('.layer1').hide();
   $(".layer2_horiz").delay(0).fadeIn();
 }
 else {
@@ -73,11 +94,17 @@ else if($('.layer4').is(':visible') || $('.layer4_horiz').is(':visible'))
 
 if (window.orientation == -90)
 {
+  $('.layer4').hide();
+  $('.layer3').hide();
+  $('.layer2').hide();
   $(".layer1_horiz").delay(0).fadeIn();
 }
 
 else if (window.orientation == 90) // Landscape
 {
+  $('.layer4').hide();
+  $('.layer2').hide();
+  $('.layer1').hide();
   $(".layer3_horiz").delay(0).fadeIn();
 
 }
