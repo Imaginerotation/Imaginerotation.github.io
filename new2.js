@@ -16,7 +16,7 @@ $(window).on("orientationchange",function(){
     $('.layer1').hide();
     $('.layer3').hide();
     $('.layer4').hide();
-    $(".layer2").delay(0).fadeIn();
+    $(".layer2_horiz").delay(0).fadeIn();
 
     currentLayer = "Yellow";
   }
