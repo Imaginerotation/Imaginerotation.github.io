@@ -34,6 +34,7 @@ $(window).on("orientationchange",function(){
     currentLayer = "Green";
 
   }
+  
   else
   {
     return;
