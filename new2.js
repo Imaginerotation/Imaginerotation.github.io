@@ -8,8 +8,6 @@ $(window).on("orientationchange",function(){
   if($('.layer1').is(':visible'))
 {
   console.log("Layer is blue");
-  $('.layer1').fadeIn();
-
 
   if (window.orientation == -90)
   {
@@ -17,9 +15,6 @@ $(window).on("orientationchange",function(){
     $('.layer1').hide();
     $('.layer3').hide();
     $('.layer4').hide();
-    $('.layer1_horiz').hide();
-    $('.layer3_horiz').hide();
-    $('.layer4_horiz').hide();
     $(".layer2_horiz").delay(0).fadeIn();
 
   }
@@ -31,10 +26,7 @@ $(window).on("orientationchange",function(){
     $('.layer1').hide();
     $('.layer2').hide();
     $('.layer3').hide();
-    $('.layer1_horiz').hide();
-    $('.layer2_horiz').hide();
-    $('.layer3_horiz').hide();
-    $(".layer4_horiz").delay(0).fadeIn();
+    $(".layer4").delay(0).fadeIn();
 
 
   }
@@ -53,17 +45,15 @@ $('.layer2').fadeIn();
 
 
 if (window.orientation == -90)
+$(".layer2").delay(0).fadeIn();
 
 
 {
-
   console.log("moved right when yellow");
   $('.layer2').hide();
   $('.layer2_horiz').hide();
   $('.layer1').hide();
   $('.layer4').hide();
-  $('.layer1_horiz').hide();
-  $('.layer4_horiz').hide();
   $(".layer3").delay(0).fadeIn();
 
 
@@ -77,9 +67,6 @@ else if (window.orientation == 90) // Landscape
   $('.layer2').hide();
   $('.layer3').hide();
   $('.layer4').hide();
-  $('.layer2_horiz').hide();
-  $('.layer3_horiz').hide();
-  $('.layer4_horiz').hide();
   $(".layer1").delay(0).fadeIn();
 
 
@@ -94,8 +81,6 @@ else if($('.layer3').is(':visible'))
 
 {
   console.log("Layer is Red");
-  $('.layer3').fadeIn();
-
 
 if (window.orientation == -90)
 {
@@ -104,9 +89,6 @@ if (window.orientation == -90)
   $('.layer3').hide();
   $('.layer2').hide();
   $('.layer1').hide();
-  $('.layer3_horiz').hide();
-  $('.layer2_horiz').hide();
-  $('.layer1_horiz').hide();
   $(".layer4").delay(0).fadeIn();
 
 
@@ -120,9 +102,6 @@ else if (window.orientation == 90) // Landscape
   $('.layer3').hide();
   $('.layer4').hide();
   $('.layer1').hide();
-  $('.layer3_horiz').hide();
-  $('.layer4_horiz').hide();
-  $('.layer1_horiz').hide();
   $(".layer2").delay(0).fadeIn();
 
 
@@ -136,8 +115,6 @@ else {
 else if($('.layer4').is(':visible'))
 
 {
-  $('.layer4').fadeIn();
-
   console.log("Layer is Green");
 
 if (window.orientation == -90)
@@ -147,9 +124,6 @@ if (window.orientation == -90)
   $('.layer4').hide();
   $('.layer3').hide();
   $('.layer2').hide();
-  $('.layer4_horiz').hide();
-  $('.layer3_horiz').hide();
-  $('.layer2_horiz').hide();
   $(".layer1").delay(0).fadeIn();
 
 
@@ -162,9 +136,6 @@ else if (window.orientation == 90) // Landscape
   $('.layer4').hide();
   $('.layer2').hide();
   $('.layer1').hide();
-  $('.layer4_horiz').hide();
-  $('.layer2_horiz').hide();
-  $('.layer1_horiz').hide();
   $(".layer3").delay(0).fadeIn();
 
 
