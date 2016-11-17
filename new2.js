@@ -5,9 +5,11 @@ $( document ).ready(function() {
 
 $(window).on("orientationchange",function(){
 
-  if($('.layer1').is(':visible'))
+  if($('.layer1').is(':visible') || $('.layer1_horiz').is(':visible'))
 {
   console.log("Layer is blue");
+  $('.layer1').fadeIn();
+  $('.layer1_horiz').hide();
 
   if (window.orientation == -90)
   {
@@ -26,7 +28,7 @@ $(window).on("orientationchange",function(){
     $('.layer1').hide();
     $('.layer2').hide();
     $('.layer3').hide();
-    $(".layer4").delay(0).fadeIn();
+    $(".layer4_horiz").delay(0).fadeIn();
 
 
   }
@@ -56,7 +58,7 @@ if (window.orientation == -90)
   $('.layer2_horiz').hide();
   $('.layer1').hide();
   $('.layer4').hide();
-  $(".layer3").delay(0).fadeIn();
+  $(".layer3_horiz").delay(0).fadeIn();
 
 
 }
@@ -69,7 +71,7 @@ else if (window.orientation == 90) // Landscape
   $('.layer2').hide();
   $('.layer3').hide();
   $('.layer4').hide();
-  $(".layer1").delay(0).fadeIn();
+  $(".layer1_horiz").delay(0).fadeIn();
 
 
 }
@@ -79,10 +81,12 @@ else {
 
 }
 
-else if($('.layer3').is(':visible'))
+else if($('.layer3').is(':visible')|| $('.layer3_horiz').is(':visible'))
 
 {
   console.log("Layer is Red");
+  $('.layer3').fadeIn();
+  $('.layer3_horiz').hide();
 
 if (window.orientation == -90)
 {
@@ -91,7 +95,7 @@ if (window.orientation == -90)
   $('.layer3').hide();
   $('.layer2').hide();
   $('.layer1').hide();
-  $(".layer4").delay(0).fadeIn();
+  $(".layer4_horiz").delay(0).fadeIn();
 
 
 }
@@ -104,7 +108,7 @@ else if (window.orientation == 90) // Landscape
   $('.layer3').hide();
   $('.layer4').hide();
   $('.layer1').hide();
-  $(".layer2").delay(0).fadeIn();
+  $(".layer2_horiz").delay(0).fadeIn();
 
 
 }
@@ -114,10 +118,12 @@ else {
 
 }
 
-else if($('.layer4').is(':visible'))
+else if($('.layer4').is(':visible') || $('.layer4_horiz').is(':visible'))
 
 {
   console.log("Layer is Green");
+  $('.layer4').fadeIn();
+  $('.layer4_horiz').hide();
 
 if (window.orientation == -90)
 {
@@ -126,7 +132,7 @@ if (window.orientation == -90)
   $('.layer4').hide();
   $('.layer3').hide();
   $('.layer2').hide();
-  $(".layer1").delay(0).fadeIn();
+  $(".layer1_horiz").delay(0).fadeIn();
 
 
 }
@@ -138,7 +144,7 @@ else if (window.orientation == 90) // Landscape
   $('.layer4').hide();
   $('.layer2').hide();
   $('.layer1').hide();
-  $(".layer3").delay(0).fadeIn();
+  $(".layer3_horiz").delay(0).fadeIn();
 
 
 }
