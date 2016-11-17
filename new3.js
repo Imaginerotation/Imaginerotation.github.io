@@ -16,6 +16,9 @@ $(window).on("orientationchange",function(){
     $('.layer1').hide();
     $('.layer3').hide();
     $('.layer4').hide();
+    $('.layer1_horiz').hide();
+    $('.layer3_horiz').hide();
+    $('.layer4_horiz').hide();
     $(".layer2_horiz").delay(0).fadeIn();
 
     currentLayer = "Yellow";
@@ -29,12 +32,15 @@ $(window).on("orientationchange",function(){
     $('.layer1').hide();
     $('.layer2').hide();
     $('.layer3').hide();
+    $('.layer1_horiz').hide();
+    $('.layer2_horiz').hide();
+    $('.layer3_horiz').hide();
     $(".layer4_horiz").delay(0).fadeIn();
 
     currentLayer = "Green";
 
   }
-  
+
   else
   {
     return;
@@ -54,6 +60,9 @@ if (window.orientation == -90)
   $('.layer2').hide();
   $('.layer1').hide();
   $('.layer4').hide();
+  $('.layer2_horiz').hide();
+  $('.layer1_horiz').hide();
+  $('.layer4_horiz').hide();
   $(".layer3_horiz").delay(0).fadeIn();
 
   currentLayer = "Red";
@@ -68,6 +77,8 @@ else if (window.orientation == 90) // Landscape
   $('.layer2').hide();
   $('.layer3').hide();
   $('.layer4').hide();
+  $('.layer3_horiz').hide();
+  $('.layer4_hoirz').hide();
   $(".layer1_horiz").delay(0).fadeIn();
 
   currentLayer = "Blue";
@@ -91,6 +102,9 @@ if (window.orientation == -90)
   $('.layer3').hide();
   $('.layer2').hide();
   $('.layer1').hide();
+  $('.layer3_horiz').hide();
+  $('.layer2_horiz').hide();
+  $('.layer1_horiz').hide();
   $(".layer4_horiz").delay(0).fadeIn();
 
   currentLayer = "Green";
@@ -105,6 +119,9 @@ else if (window.orientation == 90) // Landscape
   $('.layer3').hide();
   $('.layer4').hide();
   $('.layer1').hide();
+  $('.layer3_horiz').hide();
+  $('.layer4_horiz').hide();
+  $('.layer1_horiz').hide();
   $(".layer2_horiz").delay(0).fadeIn();
 
   currentLayer = "Yellow";
@@ -128,6 +145,9 @@ if (window.orientation == -90)
   $('.layer4').hide();
   $('.layer3').hide();
   $('.layer2').hide();
+  $('.layer4_horiz').hide();
+  $('.layer3_horiz').hide();
+  $('.layer2_horiz').hide();
   $(".layer1_horiz").delay(0).fadeIn();
 
   currentLayer = "Blue";
@@ -142,6 +162,9 @@ else if (window.orientation == 90) // Landscape
   $('.layer4').hide();
   $('.layer2').hide();
   $('.layer1').hide();
+  $('.layer4_horiz').hide();
+  $('.layer2_horiz').hide();
+  $('.layer1_horiz').hide();
   $(".layer3_horiz").delay(0).fadeIn();
 
   currentLayer = "Red";
