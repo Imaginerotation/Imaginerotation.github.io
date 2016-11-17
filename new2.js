@@ -37,7 +37,7 @@ $(window).on("orientationchange",function(){
 
 }
 
-else if($('.layer2').is(':visible'))
+else if($('.layer2').is(':visible') || $('.layer2_horiz').is(':visible') )
 {
 console.log("Layer is yellow");
 $('.layer2').fadeIn();
