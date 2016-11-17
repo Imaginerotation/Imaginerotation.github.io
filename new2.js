@@ -18,10 +18,7 @@ $(window).on("orientationchange",function(){
     $('.layer4').hide();
     $(".layer2").delay(0).fadeIn();
 
-    if (window.orientation == 0)
-    {
-      console.log("Moved back up");
-    }
+
 
 
     currentLayer = "Yellow";
@@ -50,6 +47,8 @@ $(window).on("orientationchange",function(){
 else if($('.layer2').is(':visible'))
 {
 console.log("Layer is Yellow");
+$('.layer2').fadeIn();
+
 
 
 if (window.orientation == -90)
