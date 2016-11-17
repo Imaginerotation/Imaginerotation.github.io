@@ -15,7 +15,7 @@ $(window).on("orientationchange",function(){
     $('.layer1').hide();
     $('.layer3').hide();
     $('.layer4').hide();
-    $(".layer2_horiz").delay(0).fadeIn();
+    $(".layer2").delay(0).fadeIn();
 
   }
 
@@ -39,8 +39,6 @@ $(window).on("orientationchange",function(){
 
 else if($('.layer2').is(':visible'))
 {
-console.log("Layer is Yellow");
-$('.layer2_horiz').hide();
 
 $('.layer2').fadeIn();
 
