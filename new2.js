@@ -16,7 +16,8 @@ $(window).on("orientationchange",function(){
     $('.layer1').hide();
     $('.layer3').hide();
     $('.layer4').hide();
-    $(".layer2_horiz").delay(0).fadeIn();
+    $(".layer2").delay(0).fadeIn();
+
     if (window.orientation == 0)
     {
       console.log("Moved back up");
